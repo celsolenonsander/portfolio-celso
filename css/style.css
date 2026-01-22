@@ -1,4 +1,4 @@
-/* Estilos Personalizados - Portfolio Celso Lenon Sander */
+
 
 :root {
     --primary-color: #2c3e50;
@@ -14,14 +14,14 @@
     --teal: #1abc9c;
 }
 
-/* Estilos Gerais */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
     padding-top: 76px;
 }
 
-/* Navegação */
+
 .navbar {
     background-color: var(--primary-color) !important;
     transition: all 0.3s ease;
@@ -42,7 +42,7 @@ body {
     color: var(--accent-color) !important;
 }
 
-/* Hero Section */
+
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
     color: var(--white);
@@ -102,7 +102,7 @@ body {
     font-size: 100px;
 }
 
-/* Seção Títulos */
+
 .section-title {
     color: var(--primary-color);
     border-bottom: 3px solid var(--accent-color);
@@ -112,7 +112,7 @@ body {
     font-weight: 700;
 }
 
-/* Cards de Domínios */
+
 .domain-card {
     background: white;
     border-radius: 10px;
@@ -149,7 +149,7 @@ body {
     background-color: var(--teal) !important;
 }
 
-/* Badges de Tecnologias */
+
 .tech-badge {
     padding: 8px 15px;
     border-radius: 20px;
@@ -160,7 +160,7 @@ body {
     border: 2px solid transparent;
 }
 
-/* Cores específicas para badges */
+
 .tech-badge.delphi {
     background-color: #e44d26;
     color: white;
@@ -197,10 +197,138 @@ body {
     border-color: #6b5b95;
 }
 
+.tech-badge.oauth {
+    background-color: #2980b9;  
+    color: white;
+    border-color: #2980b9;
+}
+
+.tech-badge.jwt {
+    background-color: #f1c40f;  
+    color: #2c3e50;
+    border-color: #f1c40f;
+}
+
+.tech-badge.auth {
+    background-color: #27ae60;  
+    color: white;
+    border-color: #27ae60;
+}
+
+.tech-badge.authorization {
+    background-color: #16a085;  
+    color: white;
+    border-color: #16a085;
+}
+
+.tech-badge.integration {
+    background-color: #e0234e;  
+    color: white;
+    border-color: #e0234e;
+}
+
+.tech-badge.unittest {
+    background-color: #3498db;   
+    color: white;
+    border-color: #3498db;
+}
+
+.tech-badge.cicd {
+    background-color: #2ecc71;   
+    color: white;
+    border-color: #2ecc71;
+}
+
+.tech-badge.automation {
+    background-color: #1abc9c;   
+    color: white;
+    border-color: #1abc9c;
+}
+
+.tech-badge.cache {
+    background-color: #e67e22;   
+    color: white;
+    border-color: #e67e22;
+}
+
+.tech-badge.performance {
+    background-color: #f39c12;   
+    color: white;
+    border-color: #f39c12;
+}
+
+.tech-badge.stability {
+    background-color: #27ae60;   
+    color: white;
+    border-color: #27ae60;
+}
+
+.tech-badge.quality {
+    background-color: #9b59b6;   
+    color: white;
+    border-color: #9b59b6;
+}
+
+
+.tech-badge.architecture {
+    background-color: #34495e;   
+    color: white;
+    border-color: #34495e;
+}
+
+.tech-badge.cleancode {
+    background-color: #27ae60;   
+    color: white;
+    border-color: #27ae60;
+}
+
+.tech-badge.factory {
+    background-color: #e67e22;   
+    color: white;
+    border-color: #e67e22;
+}
+
+.tech-badge.abstract {
+    background-color: #d35400;   
+    color: white;
+    border-color: #d35400;
+}
+
+.tech-badge.singleton {
+    background-color: #c0392b;   
+    color: white;
+    border-color: #c0392b;
+}
+
+.tech-badge.solid {
+    background-color: #2ecc71;   
+    color: white;
+    border-color: #2ecc71;
+}
+
+.tech-badge.scalable {
+    background-color: #16a085;   
+    color: white;
+    border-color: #16a085;
+}
+
+
 .tech-badge.mvc {
     background-color: #ff6b6b;
     color: white;
     border-color: #ff6b6b;
+}
+
+.tech-badge.desktop {
+    background-color: #2c3e50;   
+    color: white;
+    border-color: #2c3e50;
+}
+
+.tech-badge.services {
+    background-color: #1abc9c;
+    color: white;
+    border-color: #1abc9c;
 }
 
 .tech-badge.firebird {
@@ -221,7 +349,19 @@ body {
     border-color: #336791;
 }
 
-/* Timeline */
+.tech-badge.sql {
+    background-color: #f39c12;  
+    color: white;
+    border-color: #f39c12;
+}
+
+.tech-badge.orm {
+    background-color: #8e44ad;  
+    color: white;
+    border-color: #8e44ad;
+}
+
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -279,7 +419,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* Cards de Projetos */
+
 .project-card {
     transition: all 0.3s ease;
     height: 100%;
@@ -303,7 +443,7 @@ body {
     margin-top: 15px;
 }
 
-/* Seção IA */
+
 .bg-dark-2 {
     background-color: var(--bg-dark-2) !important;
 }
@@ -326,7 +466,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Badges específicos */
+
 .bg-delphi {
     background-color: #e44d26 !important;
     color: white !important;
@@ -362,7 +502,7 @@ body {
     color: white !important;
 }
 
-/* Contato */
+
 .contact-card {
     background: white;
     border-radius: 10px;
@@ -386,7 +526,7 @@ body {
     color: inherit;
 }
 
-/* Formulário */
+
 .form-control {
     border: 1px solid #ddd;
     padding: 12px;
@@ -398,7 +538,7 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .hero {
         padding: 80px 0;
@@ -422,7 +562,7 @@ body {
     }
 }
 
-/* Animações */
+
 html {
     scroll-behavior: smooth;
 }
@@ -432,13 +572,13 @@ section {
     margin-top: -80px;
 }
 
-/* Animações ao scroll */
+
 .animate__animated {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
-/* Botões */
+
 .btn-primary {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
