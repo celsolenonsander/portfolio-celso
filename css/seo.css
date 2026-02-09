@@ -1,0 +1,95 @@
+/* seo.css - Estilos para otimização SEO */
+
+
+.seo-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Estilos para FAQ SEO */
+#seo-faq {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 3px solid var(--accent-color);
+}
+
+#seo-faq .accordion-button {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#seo-faq .accordion-button:not(.collapsed) {
+    background-color: rgba(26, 188, 156, 0.1);
+    color: var(--accent-color);
+}
+
+/* Estilos para breadcrumb */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0.75rem 0;
+}
+
+.breadcrumb-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Estilos para tags de keywords */
+#keyword-tags .badge {
+    transition: all 0.3s ease;
+}
+
+#keyword-tags .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Micro-conteúdo SEO */
+.seo-micro-content {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.seo-micro-content strong {
+    color: var(--accent-color);
+}
+
+/* Print styles para conteúdo SEO */
+@media print {
+    #seo-faq,
+    #keyword-tags,
+    .breadcrumb,
+    .seo-micro-content {
+        display: block !important;
+        opacity: 1 !important;
+        max-height: none !important;
+    }
+}
+
+/* Schema.org microdata styling */
+[itemscope] {
+    border: none;
+}
+
+/* Estilos para rich snippets */
+.rating-stars {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.review-count {
+    font-size: 0.8rem;
+    color: #6c757d;
+}

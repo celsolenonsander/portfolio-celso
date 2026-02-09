@@ -1,0 +1,271 @@
+/* fixes.css - Correções CSS sem alterar estrutura HTML/JS */
+
+/* ============================================
+   1. CORRIGIR FAIXA BRANCA ABAIXO DO MENU
+   ============================================ */
+
+/* Reset de margin/padding em elementos criados dinamicamente */
+.breadcrumb,
+[class*="breadcrumb"],
+nav[aria-label="breadcrumb"] {
+    display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+/* Remover qualquer espaço extra após o navbar */
+.navbar ~ *:first-of-type:not(section) {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Garantir que a primeira section comece logo após o navbar */
+body {
+    padding-top: 76px !important; /* Apenas a altura do navbar */
+}
+
+body::before,
+body::after {
+    content: none !important;
+}
+
+/* ============================================
+   2. REMOVER "PERGUNTAS FREQUENTES" VISÍVEL
+   ============================================ */
+
+/* Esconder completamente a seção FAQ */
+#seo-faq,
+[class*="faq"],
+[class*="FAQ"],
+section:has(h2:contains("Perguntas Frequentes")),
+section:has(h2:contains("FAQ")),
+.accordion {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important;
+    pointer-events: none !important;
+}
+
+/* Esconder títulos que contenham "Perguntas Frequentes" */
+h1:contains("Perguntas Frequentes"),
+h2:contains("Perguntas Frequentes"),
+h3:contains("Perguntas Frequentes"),
+h4:contains("Perguntas Frequentes"),
+h5:contains("Perguntas Frequentes"),
+h6:contains("Perguntas Frequentes") {
+    display: none !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ============================================
+   3. CORRIGIR LINHA SOBRE CARDS DE CONTATO
+   ============================================ */
+
+/* Remover bordas/linhas extras sobre os cards */
+#contato .row::before,
+#contato .row::after,
+#contato::before,
+#contato::after,
+#contato > .container::before,
+#contato > .container::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Remover qualquer background ou borda que crie linha */
+#contato .contact-card {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+}
+
+#contato .contact-card::before,
+#contato .contact-card::after {
+    display: none !important;
+}
+
+/* Reset de estilos que podem criar linhas */
+#contato {
+    background-image: none !important;
+    background-position: top !important;
+    border-top: none !important;
+}
+
+#contato .container {
+    background: transparent !important;
+}
+
+/* Remover linhas de accordion que possam estar vazando */
+.accordion-button::after,
+.accordion-item,
+.accordion-header {
+    display: none !important;
+}
+
+/* ============================================
+   4. CORREÇÕES GERAIS DE LAYOUT
+   ============================================ */
+
+/* Remover qualquer elemento invisível que esteja ocupando espaço */
+[style*="opacity: 0"],
+[style*="opacity:0"],
+[style*="height: 0"],
+[style*="height:0"],
+[style*="max-height: 0"],
+[style*="max-height:0"] {
+    height: 0 !important;
+    max-height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Garantir que sections tenham espaçamento consistente */
+section {
+    margin: 0 !important;
+    padding: 3rem 0 !important;
+}
+
+section:first-of-type {
+    padding-top: 2rem !important;
+}
+
+/* Corrigir margens do hero */
+.hero {
+    margin-top: -1px !important;
+    padding-top: 4rem !important;
+}
+
+/* Remover qualquer keyword tag visível */
+#keyword-tags,
+.keyword-tags,
+[class*="keyword"],
+[class*="tag"]:not(.tech-badge):not(.badge) {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ============================================
+   5. CORRIGIR ESPAÇAMENTO DO RODAPÉ
+   ============================================ */
+
+/* Remover conteúdo extra antes do footer */
+footer ~ *:not(.whatsapp-float) {
+    display: none !important;
+}
+
+/* Garantir que footer comece corretamente */
+footer {
+    margin-top: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Remover qualquer conteúdo entre contato e footer */
+#contato + *:not(footer) {
+    display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ============================================
+   6. UTILITÁRIOS PARA ELEMENTOS DINÂMICOS
+   ============================================ */
+
+/* Classe para esconder elementos criados por JS */
+.hidden-for-ux {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    z-index: -9999 !important;
+}
+
+/* Forçar elementos a não quebrar layout */
+[data-seo-content="true"]:not(.keep-visible) {
+    composes: hidden-for-ux;
+}
+
+/* ============================================
+   7. MEDIA QUERIES PARA RESPONSIVIDADE
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Corrigir espaçamento em mobile */
+    .hero {
+        padding-top: 3rem !important;
+    }
+    
+    /* Garantir que conteúdo SEO não apareça */
+    .hidden-for-ux,
+    [data-seo="true"] {
+        display: none !important;
+    }
+}
+
+/* ============================================
+   8. CORREÇÕES ESPECÍFICAS PARA BOOTSTRAP
+   ============================================ */
+
+/* Remover espaçamento extra do container */
+.container {
+    max-width: 100% !important;
+}
+
+/* Corrigir row que possa ter margin */
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* ============================================
+   9. OVERRIDES FINAIS (alta especificidade)
+   ============================================ */
+
+body > div:not(#seo-faq):not(.whatsapp-float):not(.container):not(.row) {
+    display: none !important;
+}
+
+/* Seletor nuclear para elementos problemáticos */
+body *:has(> h2:contains("Perguntas")),
+body *:has(> h3:contains("Frequentes")) {
+    all: unset !important;
+    display: none !important;
+}
+
+/* Garantir que apenas sections visíveis apareçam */
+body > *:not(nav):not(section):not(footer):not(.whatsapp-float):not(script) {
+    display: none !important;
+}

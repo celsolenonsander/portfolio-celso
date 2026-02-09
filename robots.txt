@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Sitemaps
+Sitemap: https://celsolenonsander.github.io/sitemap.xml
+
+# Crawl-delay para servidores pequenos
+Crawl-delay: 10
+
+# Palavras-chave específicas para indexação
+# programador-delphi desenvolvedor-freelance

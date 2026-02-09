@@ -1,6 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <!-- Meta Tags para SEO - Otimizadas para palavras-chave -->
+    <meta name="description" content="Programador Sênior | Desenvolvedor de Software freelance com 10+ anos de experiência em Delphi, Python, NestJS, React. Especialista em sistemas corporativos, ERP, PDV, folha de pagamento, contábil, fiscal e integração de IA. Desenvolvedor disponível para projetos.">
+
+    <meta name="keywords" content="
+        programador delphi,
+        desenvolvedor delphi,
+        programador freelance,
+        desenvolvedor freelance,
+        programador delphi freelance,
+        desenvolvedor delphi freelance,
+        programador python,
+        desenvolvedor python,
+        programador nestjs,
+        desenvolvedor nestjs,
+        programador santa catarina,
+        desenvolvedor santa catarina,
+        desenvolvedor de software,
+        programador de software,
+        especialista em delphi,
+        consultor delphi,
+        desenvolvimento de sistemas,
+        programador experiente,
+        desenvolvedor experiente,
+        freelancer delphi,
+        freelancer desenvolvimento,
+        programador para projeto,
+        desenvolvedor para contrato,
+        programador remoto,
+        desenvolvedor remoto,
+        celso lenon sander,
+        desenvolvedor brasil,
+        programador brasil
+    ">
+
+    <!-- Open Graph otimizado -->
+    <meta property="og:title" content="Programador Sênior | Desenvolvedor Freelance com 10+ anos">
+    <meta property="og:description" content="Contrate um programador Delphi experiente para seu projeto. Desenvolvedor freelance especializado em sistemas corporativos, ERP, PDV, folha. Trabalho remoto ou presencial.">
+
+    <!-- Twitter Cards otimizado -->
+    <meta name="twitter:title" content="Programador Delphi Freelance | Desenvolvimento de Sistemas">
+    <meta name="twitter:description" content="Desenvolvedor Delphi disponível para projetos. Especialista em sistemas fiscais, contábeis, folha de pagamento e integração de IA.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://celsolenonsander.github.io/">
+
+    <!-- Hreflang para internacionalização -->
+    <link rel="alternate" hreflang="pt-br" href="https://celsolenonsander.github.io/">
+    <link rel="alternate" hreflang="pt" href="https://celsolenonsander.github.io/">
+    <link rel="alternate" hreflang="en" href="https://celsolenonsander.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://celsolenonsander.github.io/">
+
+    <!-- Mobile optimization -->
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celso Lenon Sander - Desenvolvedor de Software</title>
@@ -12,14 +70,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/delphi-ide.png">
+    <!--<link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/delphi-ide.png"> -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/artificial-intelligence.png">
 </head>
 <body>
     <!-- Navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
-                <i class="bi bi-code-slash me-2"></i>Celso Lenon Sander
+                <i class="bi bi-code-slash me-2"></i><span id="nav-name">Celso Lenon Sander</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -60,44 +119,21 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-3">Celso Lenon Sander</h1>
-                    <div class="badge bg-accent text-white mb-3 p-2 fs-6">
-                        <i class="bi bi-briefcase me-1"></i>Desenvolvedor desde 2013
+                    <h1 class="display-4 fw-bold mb-3" id="hero-name">Celso Lenon Sander</h1>
+                    <div class="badge bg-accent text-white mb-3 p-2 fs-6" id="experience-badge">
+                        <i class="bi bi-briefcase me-1"></i>Desenvolvedor desde <span id="experience-year">2013</span>
                     </div>
-                    <h2 class="h3 mb-4 text-white">
-                        Desenvolvedor de Software | Especialista em Sistemas Corporativos | IA Integrada
-                    </h2>
-                    <p class="lead mb-4 text-light">
-                        Especialista no desenvolvimento de sistemas fiscais, contábeis, folha de pagamento, 
-                        ERP, PDV e sistemas telefônicos com integração de hardware. Foco em arquitetura de 
-                        software, qualidade de código, segurança e integração de Inteligência Artificial.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3 mb-5">
-                        <a href="mailto:celsolsander@gmail.com?subject=Contato%20pelo%20site&body=Olá%20Celso,%20vim%20pelo%20seu%20portfólio." class="btn btn-primary btn-lg">
-                            <i class="bi bi-envelope me-2"></i>Contato
-                        </a>
-                        <a href="https://linkedin.com/in/celsolenonsander" target="_blank" class="btn btn-outline-light btn-lg">
-                            <i class="bi bi-linkedin me-2"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/celsolenonsander/" target="_blank" class="btn btn-outline-light btn-lg">
-                            <i class="bi bi-github me-2"></i>GitHub
-                        </a>
-                        <a href="#projetos" class="btn btn-accent btn-lg">
-                            <i class="bi bi-folder me-2"></i>Projetos
-                        </a>
-                        <button onclick="gerarCurriculoPDF()" class="btn btn-light btn-lg">
-                          <i class="bi bi-file-earmark-pdf me-2"></i>Baixar Currículo em PDF
-                       </button>
-
+                    <h2 class="h3 mb-4 text-white" id="hero-title">Desenvolvedor de Software | Especialista em Sistemas Corporativos | IA Integrada</h2>
+                    <p class="lead mb-4 text-light" id="hero-description">Carregando descrição...</p>
+                    <div class="d-flex flex-wrap gap-3 mb-5" id="hero-buttons">
+                        <!-- Botões serão renderizados via JavaScript -->
                     </div>
                 </div>
-<div class="col-lg-4 text-center">
-    <div class="profile-img-placeholder">
-        <img src="img/eu.png" alt="Celso Lenon Sander" class="profile-img">
-        <!-- <p class="mt-3 text-light">Foto Profissional</p> -->
-    </div>
-</div>
-
+                <div class="col-lg-4 text-center">
+                    <div class="profile-img-placeholder">
+                        <img id="profile-img" src="img/eu.png" alt="Celso Lenon Sander" class="profile-img">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -110,49 +146,9 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="card border-0 shadow">
                         <div class="card-body p-4">
-                            <p class="fs-5">
-                                Desenvolvedor de Software com sólida experiência (Desde 2013) no desenvolvimento 
-                                de sistemas, atuando em projetos fiscais, contábeis, folha de pagamento, ERP, 
-                                PDV e sistemas telefônicos (Integrações com hardware) e muitos outros. Forte 
-                                foco em aplicações Desktop, arquitetura de software, qualidade de código, 
-                                segurança e integração de Inteligência Artificial, com atuação desde a análise 
-                                de negócio até a entrega e sustentação das soluções.
-                            </p>
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <h5 class="text-primary mb-3"><i class="bi bi-gear me-2"></i>Atuação</h5>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            Análise de negócio
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            Arquitetura de software
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            Desenvolvimento full-stack
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5 class="text-primary mb-3"><i class="bi bi-shield-check me-2"></i>Especializações</h5>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            Qualidade de código
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            Segurança da informação
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            Integração de IA
-                                        </li>
-                                    </ul>
-                                </div>
+                            <p class="fs-5" id="profile-summary">Carregando perfil...</p>
+                            <div class="row mt-4" id="profile-highlights">
+                                <!-- Destaques serão renderizados via JavaScript -->
                             </div>
                         </div>
                     </div>
@@ -165,61 +161,8 @@
     <section id="dominios" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Domínios de Negócio</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="domain-card">
-                        <div class="domain-icon bg-primary">
-                            <i class="bi bi-calculator"></i>
-                        </div>
-                        <h4>Sistemas Fiscais</h4>
-                        <p>Desenvolvimento de soluções para gestão fiscal e tributária</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="domain-card">
-                        <div class="domain-icon bg-success">
-                            <i class="bi bi-cash-stack"></i>
-                        </div>
-                        <h4>Sistemas Contábeis</h4>
-                        <p>Soluções para contabilidade e gestão financeira</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="domain-card">
-                        <div class="domain-icon bg-warning">
-                            <i class="bi bi-people"></i>
-                        </div>
-                        <h4>Folha de Pagamento</h4>
-                        <p>Sistemas de gestão de RH e folha de pagamento</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="domain-card">
-                        <div class="domain-icon bg-info">
-                            <i class="bi bi-building"></i>
-                        </div>
-                        <h4>ERP</h4>
-                        <p>Sistemas de gestão empresarial integrada</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="domain-card">
-                        <div class="domain-icon bg-purple">
-                            <i class="bi bi-shop"></i>
-                        </div>
-                        <h4>PDV</h4>
-                        <p>Sistemas de ponto de venda e automação comercial</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="domain-card">
-                        <div class="domain-icon bg-teal">
-                            <i class="bi bi-telephone"></i>
-                        </div>
-                        <h4>Sistemas Telefônicos</h4>
-                        <p>Integração com hardware e sistemas de telefonia</p>
-                    </div>
-                </div>
+            <div class="row" id="domains-container">
+                <!-- Domínios serão renderizados via JavaScript -->
             </div>
         </div>
     </section>
@@ -235,16 +178,8 @@
                     <h3 class="h4 mb-4 text-primary">
                         <i class="bi bi-code-slash me-2"></i>Linguagens, Frameworks e Plataformas
                     </h3>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="tech-badge delphi">Delphi</span>
-                        <span class="tech-badge python">Python</span>
-                        <span class="tech-badge nestjs">NestJS</span>
-                        <span class="tech-badge react">ReactJS</span>
-                        <span class="tech-badge typescript">TypeScript</span>
-                        <span class="tech-badge api">APIs REST</span>
-                        <span class="tech-badge mvc">MVC</span>
-                        <span class="tech-badge desktop">Aplicações Desktop</span>
-                        <span class="tech-badge services">Serviços</span>
+                    <div class="d-flex flex-wrap gap-2 mb-4" id="tech-languages">
+                        <!-- Tecnologias serão renderizadas via JavaScript -->
                     </div>
                 </div>
             </div>
@@ -255,12 +190,8 @@
                     <h3 class="h4 mb-4 text-primary">
                         <i class="bi bi-database me-2"></i>Bancos de Dados
                     </h3>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="tech-badge firebird">Firebird</span>
-                        <span class="tech-badge sqlserver">SQL Server</span>
-                        <span class="tech-badge postgresql">PostgreSQL</span>
-                        <span class="tech-badge sql">SQL</span>
-                        <span class="tech-badge orm">ORMs</span>
+                    <div class="d-flex flex-wrap gap-2 mb-4" id="tech-databases">
+                        <!-- Tecnologias serão renderizadas via JavaScript -->
                     </div>
                 </div>
             </div>
@@ -271,15 +202,8 @@
                     <h3 class="h4 mb-4 text-primary">
                         <i class="bi bi-diagram-3 me-2"></i>Arquitetura & Padrões de Projeto
                     </h3>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="tech-badge architecture">Arquitetura em Camadas</span>
-                        <span class="tech-badge mvc">MVC</span>
-                        <span class="tech-badge cleancode">Clean Code</span>
-                        <span class="tech-badge factory">Factory Pattern</span>
-                        <span class="tech-badge abstract">Abstract Factory</span>
-                        <span class="tech-badge singleton">Singleton</span>
-                        <span class="tech-badge solid">SOLID</span>
-                        <span class="tech-badge scalable">Escalabilidade</span>
+                    <div class="d-flex flex-wrap gap-2 mb-4" id="tech-architecture">
+                        <!-- Tecnologias serão renderizadas via JavaScript -->
                     </div>
                 </div>
             </div>
@@ -290,14 +214,8 @@
                     <h3 class="h4 mb-4 text-primary">
                         <i class="bi bi-shield-check me-2"></i>Backend, Segurança & Integrações
                     </h3>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="tech-badge api">APIs REST</span>
-                        <span class="tech-badge oauth">OAuth 2.0</span>
-                        <span class="tech-badge jwt">JWT</span>
-                        <span class="tech-badge auth">Autenticação</span>
-                        <span class="tech-badge authorization">Autorização</span>
-                        <span class="tech-badge integration">Integração</span>
-                        <span class="tech-badge orm">ORMs</span>
+                    <div class="d-flex flex-wrap gap-2 mb-4" id="tech-backend">
+                        <!-- Tecnologias serão renderizadas via JavaScript -->
                     </div>
                 </div>
             </div>
@@ -308,178 +226,30 @@
                     <h3 class="h4 mb-4 text-primary">
                         <i class="bi bi-speedometer2 me-2"></i>Qualidade, Performance & DevOps
                     </h3>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="tech-badge unittest">Testes Unitários</span>
-                        <span class="tech-badge cicd">CI/CD</span>
-                        <span class="tech-badge automation">Automação</span>
-                        <span class="tech-badge cache">Cache Distribuído</span>
-                        <span class="tech-badge performance">Performance</span>
-                        <span class="tech-badge stability">Estabilidade</span>
-                        <span class="tech-badge quality">Qualidade</span>
+                    <div class="d-flex flex-wrap gap-2" id="tech-devops">
+                        <!-- Tecnologias serão renderizadas via JavaScript -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- ============================= -->
-<!-- Experiência: Projetos Independentes -->
-<!-- ============================= -->
-<section id="freelance" class="py-5">
-    <div class="container">
-        <h2 class="section-title">Projetos Independentes & Freelance</h2>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">2018 - Atual</div>
-
-                    <h4>Projetos Independentes</h4>
-                    <h5>Consultor em Desenvolvimento de Sistemas</h5>
-
-                    <p>
-                        Atuação em projetos independentes e consultorias pontuais, envolvendo desenvolvimento
-                        de aplicações web, APIs REST, automações e manutenção de sistemas legados.
-                        Responsável por todo o ciclo de entrega, desde o levantamento de requisitos
-                        até a implementação e publicação, com foco em performance, escalabilidade
-                        e integração entre sistemas.
-                    </p>
-
-                    <div class="tech-tags">
-                        <span class="badge bg-primary">Node.js</span>
-                        <span class="badge bg-primary">NestJS</span>
-                        <span class="badge bg-primary">React</span>
-                        <span class="badge bg-primary">Next.js</span>
-                        <span class="badge bg-primary">APIs REST</span>
-                        <span class="badge bg-primary">SQL / NoSQL</span>
-                        <span class="badge bg-primary">Integrações</span>
-                    </div>
-                </div>
+    <!-- Seção Freelance -->
+    <section id="freelance" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Projetos Independentes & Freelance</h2>
+            <div class="timeline" id="freelance-container">
+                <!-- Freelance será renderizado via JavaScript -->
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- ============================= -->
-    <!-- Experiência Profissional -->
-    <!-- ============================= -->
+    <!-- Seção Experiência -->
     <section id="experiencia" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Experiência Profissional</h2>
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2025 - Atual</div>
-
-                        <h4>Extradigital Tecnologia.</h4>
-                        <h5>Programador Sênior Delphi</h5>
-
-                        <p>
-                            Desenvolvimento e manutenção de sistemas especializados para cartórios,
-                            com foco em segurança jurídica, fluxos de trabalho específicos do setor
-                            e conformidade com normativas legais.
-                        </p>
-
-                        <div class="tech-tags">
-                            <span class="badge bg-primary">Delphi</span>
-                            <span class="badge bg-primary">SQL Server</span>
-                            <span class="badge bg-primary">Sistemas Especializados</span>
-                        </div>
-                    </div>
-                </div>
-<!--
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022 - 2024</div>
-
-                        <h4>Theos Informática Ltda.</h4>
-                        <h5>Programador Sênior Delphi</h5>
-
-                        <p>
-                            Liderança no desenvolvimento de sistemas integrados de folha de pagamento,
-                            envolvendo cálculos complexos, geração de relatórios fiscais,
-                            integração bancária e conformidade com a legislação trabalhista vigente.
-                        </p>
-
-                        <div class="tech-tags">
-                            <span class="badge bg-primary">Delphi</span>
-                            <span class="badge bg-primary">SQL Server</span>
-                            <span class="badge bg-primary">Sistemas de Folha</span>
-                            <span class="badge bg-primary">Integração Bancária</span>
-                        </div>
-                    </div>
-                </div>
--->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 - 2024</div>
-
-                        <h4>SuperSoft Sistemas Ltda.</h4>
-                        <h5>Programador Sênior Delphi N4</h5>
-
-                        <p>
-                            Desenvolvimento e sustentação de módulos críticos de um ERP,
-                            com atuação nas áreas fiscal, contábil e folha de pagamento.
-                            Responsável por implementações, correções e otimizações de performance.
-                        </p>
-
-                        <div class="tech-tags">
-                            <span class="badge bg-primary">Delphi XE10.2</span>
-                            <span class="badge bg-primary">Firebird</span>
-                            <span class="badge bg-primary">ERP</span>
-                            <span class="badge bg-primary">Módulos Fiscais</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2012 - 2020</div>
-
-                        <h4>Mamut Tecnologia Ltda.</h4>
-                        <h5>Programador Delphi</h5>
-
-                        <p>
-                            Desenvolvimento de sistemas de automação comercial,
-                            com foco em integração de hardware periférico
-                            (PABX, balanças e leitores),
-                            utilizando comunicação serial, TCP e UDP.
-                            Atuação em todo o ciclo de desenvolvimento do produto.
-                        </p>
-
-                        <div class="tech-tags">
-                            <span class="badge bg-primary">Delphi XE10.3</span>
-                            <span class="badge bg-primary">Firebird</span>
-                            <span class="badge bg-primary">Integração de Hardware</span>
-                            <span class="badge bg-primary">TCP / UDP / Serial</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2010 - 2012</div>
-
-                        <h4>Líder Peças Rodoviárias</h4>
-                        <h5>Desenhista Mecânico / Programador CNC</h5>
-
-                        <p>
-                            Programação e preparação de torno CNC,
-                            desenvolvimento de desenhos técnicos e projetos
-                            de novos produtos em AutoCAD,
-                            atuando como elo entre engenharia e manufatura.
-                        </p>
-
-                        <div class="tech-tags">
-                            <span class="badge bg-primary">AutoCAD</span>
-                            <span class="badge bg-primary">Programação CNC</span>
-                            <span class="badge bg-primary">Desenvolvimento de Produto</span>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="timeline" id="experience-container">
+                <!-- Experiências serão renderizadas via JavaScript -->
             </div>
         </div>
     </section>
@@ -488,316 +258,37 @@
     <section id="projetos" class="py-5">
         <div class="container">
             <h2 class="section-title">Projetos Destacados</h2>
-            
-            <div class="row">
-                <!-- Projeto 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow project-card">
-                        <div class="card-body p-4">
-                            <div class="project-icon mb-3">
-                                <i class="bi bi-calculator"></i>
-                            </div>
-                            <h4 class="card-title">Sistema Fiscal Integrado</h4>
-                            <p class="card-text">
-                                Sistema completo de gestão fiscal com geração de NF-e, CT-e, MDF-e e SPED.
-                                Integração direta com SEFAZ e certificação digital.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary">Delphi</span>
-                                <span class="badge bg-primary">Firebird</span>
-                                <span class="badge bg-primary">WebServices</span>
-                                <span class="badge bg-primary">XML</span>
-                            </div>
-                            <div class="project-result">
-                                <i class="bi bi-check-circle text-success me-1"></i>
-                                Redução de 70% no tempo de processamento
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projeto 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow project-card">
-                        <div class="card-body p-4">
-                            <div class="project-icon mb-3">
-                                <i class="bi bi-telephone"></i>
-                            </div>
-                            <h4 class="card-title">Sistema de Telefonia Corporativa</h4>
-                            <p class="card-text">
-                                Sistema integrado de PABX digital com gravação de chamadas, relatórios 
-                                analíticos e integração com CRM.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary">Delphi</span>
-                                <span class="badge bg-primary">TCP/IP</span>
-                                <span class="badge bg-primary">Áudio Digital</span>
-                                <span class="badge bg-primary">SQL Server</span>
-                            </div>
-                            <div class="project-result">
-                                <i class="bi bi-check-circle text-success me-1"></i>
-                                Suporte a 500+ linhas simultâneas
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projeto 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-0 shadow project-card">
-                        <div class="card-body p-4">
-                            <div class="project-icon mb-3">
-                                <i class="bi bi-robot"></i>
-                            </div>
-                            <h4 class="card-title">Automação com IA</h4>
-                            <p class="card-text">
-                                Sistema de classificação automática de documentos fiscais utilizando 
-                                machine learning para redução de erros manuais.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary">Python</span>
-                                <span class="badge bg-primary">TensorFlow</span>
-                                <span class="badge bg-primary">API REST</span>
-                                <span class="badge bg-primary">PostgreSQL</span>
-                            </div>
-                            <div class="project-result">
-                                <i class="bi bi-check-circle text-success me-1"></i>
-                                95% de precisão na classificação
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-4">
-                <!-- Projeto 4 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow project-card">
-                        <div class="card-body p-4">
-                            <div class="project-icon mb-3">
-                                <i class="bi bi-shop"></i>
-                            </div>
-                            <h4 class="card-title">Sistema PDV Completo</h4>
-                            <p class="card-text">
-                                Sistema de ponto de venda com múltiplas formas de pagamento, controle de 
-                                estoque, NFC-e e integração com marketplaces.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary">Delphi</span>
-                                <span class="badge bg-primary">Firebird</span>
-                                <span class="badge bg-primary">Hardware</span>
-                                <span class="badge bg-primary">NFC-e</span>
-                            </div>
-                            <div class="project-result">
-                                <i class="bi bi-check-circle text-success me-1"></i>
-                                200+ clientes atendidos
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projeto 5 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow project-card">
-                        <div class="card-body p-4">
-                            <div class="project-icon mb-3">
-                                <i class="bi bi-building"></i>
-                            </div>
-                            <h4 class="card-title">ERP Industrial</h4>
-                            <p class="card-text">
-                                Sistema de gestão empresarial para indústria com controle de produção, 
-                                custos, qualidade e integração com máquinas.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary">Delphi</span>
-                                <span class="badge bg-primary">SQL Server</span>
-                                <span class="badge bg-primary">OPC</span>
-                                <span class="badge bg-primary">API REST</span>
-                            </div>
-                            <div class="project-result">
-                                <i class="bi bi-check-circle text-success me-1"></i>
-                                30% aumento na produtividade
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="projects-container">
+                <!-- Projetos serão renderizados via JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- Seção IA & Data -->
+    <!-- Seção IA -->
     <section id="ia" class="py-5 bg-dark text-white">
         <div class="container">
             <h2 class="section-title text-white">Inteligência Artificial & Data</h2>
-            <p class="text-center mb-5">Integração de IA à arquitetura de sistemas para automação e inovação</p>
+            <p class="text-center mb-5" id="ai-description">Carregando...</p>
             
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card bg-dark-2 border-0">
-                        <div class="card-body p-4">
-                            <h4 class="text-accent mb-4">
-                                <i class="bi bi-cpu me-2"></i>Especialização em IA
-                            </h4>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-3">
-                                            <i class="bi bi-check-circle text-accent me-2"></i>
-                                            <strong>Integração de IA</strong> à arquitetura de sistemas
-                                        </li>
-                                        <li class="mb-3">
-                                            <i class="bi bi-check-circle text-accent me-2"></i>
-                                            <strong>Desenvolvimento</strong> de soluções em Python
-                                        </li>
-                                        <li class="mb-3">
-                                            <i class="bi bi-check-circle text-accent me-2"></i>
-                                            <strong>Uso de PyTorch</strong> e TensorFlow
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-3">
-                                            <i class="bi bi-check-circle text-accent me-2"></i>
-                                            <strong>Aplicação de IA</strong> para:
-                                        </li>
-                                        <li class="ms-4 mb-2">
-                                            <i class="bi bi-arrow-right-short text-accent"></i>
-                                            Automação de processos
-                                        </li>
-                                        <li class="ms-4 mb-2">
-                                            <i class="bi bi-arrow-right-short text-accent"></i>
-                                            Análise e classificação de dados
-                                        </li>
-                                        <li class="ms-4 mb-2">
-                                            <i class="bi bi-arrow-right-short text-accent"></i>
-                                            Apoio à tomada de decisão
-                                        </li>
-                                        <li class="ms-4">
-                                            <i class="bi bi-arrow-right-short text-accent"></i>
-                                            Evolução de sistemas legados
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row mb-5" id="ai-specialties">
+                <!-- Especializações em IA serão renderizadas via JavaScript -->
             </div>
             
-            <div class="row text-center">
-                <div class="col-md-3 mb-4">
-                    <div class="ia-card p-4">
-                        <div class="ia-icon mb-3">
-                            <i class="bi bi-robot"></i>
-                        </div>
-                        <h5>Machine Learning</h5>
-                        <p class="small">Modelos preditivos e classificação</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="ia-card p-4">
-                        <div class="ia-icon mb-3">
-                            <i class="bi bi-graph-up"></i>
-                        </div>
-                        <h5>Análise de Dados</h5>
-                        <p class="small">Processamento e insights</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="ia-card p-4">
-                        <div class="ia-icon mb-3">
-                            <i class="bi bi-gear"></i>
-                        </div>
-                        <h5>Automação</h5>
-                        <p class="small">Processos inteligentes</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="ia-card p-4">
-                        <div class="ia-icon mb-3">
-                            <i class="bi bi-lightning"></i>
-                        </div>
-                        <h5>Integração</h5>
-                        <p class="small">IA em sistemas existentes</p>
-                    </div>
-                </div>
+            <div class="row text-center" id="ai-cards">
+                <!-- Cards de IA serão renderizados via JavaScript -->
             </div>
         </div>
     </section>
 
     <!-- Seção Resumo Técnico -->
-    <section id="resumo" class="py-13">
+    <section id="resumo" class="py-10">
         <div class="container">
-            <h2 class="section-title mb-4">Resumo Técnico</h2>
-            
+            <h2 class="section-title">Resumo Técnico</h2>
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="card border-0 shadow">
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h5 class="text-primary mb-3">
-                                        <i class="bi bi-briefcase me-2"></i>Domínios
-                                    </h5>
-                                    <div class="d-flex flex-wrap gap-2 mb-4">
-                                        <span class="badge bg-delphi">Fiscal</span>
-                                        <span class="badge bg-info">Contábil</span>
-                                        <span class="badge bg-nestjs">Folha</span>
-                                        <span class="badge bg-postgresql">ERP</span>
-                                        <span class="badge bg-python">PDV</span>
-                                        <span class="badge bg-react">Telefonia</span>
-                                    </div>
-                                    
-                                    <h5 class="text-primary mb-3">
-                                        <i class="bi bi-code-slash me-2"></i>Linguagens
-                                    </h5>
-                                    <div class="d-flex flex-wrap gap-2 mb-4">
-                                        <span class="badge bg-delphi">Delphi</span>
-                                        <span class="badge bg-python">Python</span>
-                                        <span class="badge bg-nestjs">NestJS</span>
-                                        <span class="badge bg-react">ReactJS</span>
-                                    </div>
-                                    
-                                    <h5 class="text-primary mb-3">
-                                        <i class="bi bi-cpu me-2"></i>IA & ML
-                                    </h5>
-                                    <div class="d-flex flex-wrap gap-2 mb-4">
-                                        <span class="badge bg-delphi">PyTorch</span>
-                                        <span class="badge bg-purple">TensorFlow</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <h5 class="text-primary mb-3">
-                                        <i class="bi bi-database me-2"></i>Bancos
-                                    </h5>
-                                    <div class="d-flex flex-wrap gap-2 mb-4">
-                                        <span class="badge bg-delphi">Firebird</span>
-                                        <span class="badge bg-dark">SQL Server</span>
-                                        <span class="badge bg-react">PostgreSQL</span>
-                                    </div>
-                                    
-                                    <h5 class="text-primary mb-3">
-                                        <i class="bi bi-diagram-3 me-2"></i>Arquitetura
-                                    </h5>
-                                    <div class="d-flex flex-wrap gap-2 mb-4">
-                                        <span class="badge bg-info">MVC</span>
-                                        <span class="badge bg-react">API REST</span>
-                                        <span class="badge bg-success">Clean Code</span>
-                                    </div>
-                                    
-                                    <h5 class="text-primary mb-3">
-                                        <i class="bi bi-shield-check me-2"></i>Qualidade & Segurança
-                                    </h5>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-react">OAuth 2.0</span>
-                                        <span class="badge bg-nestjs">JWT</span>
-                                        <span class="badge bg-success">Testes Unitários</span>
-                                        <span class="badge bg-delphi">CI/CD</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card-body p-4" id="technical-summary">
+                            <!-- Resumo técnico será renderizado via JavaScript -->
                         </div>
                     </div>
                 </div>
@@ -805,57 +296,15 @@
         </div>
     </section>
 
-  <!-- Seção Contato -->
-<section id="contato" class="py-50 bg-light">
-    <div class="container">
-        <h2 class="section-title">Contato</h2>
-        <p class="text-center mb-5">Entre em contato para oportunidades ou colaborações</p>
-        
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="row text-center">
-                    <!-- Email -->
-                    <div class="col-md-3 mb-4">
-                        <a href="mailto:celsolsander@gmail.com?subject=Contato%20pelo%20site&body=Olá%20Celso,%20vim%20pelo%20seu%20portfólio." class="contact-link">
-                            <div class="contact-card p-4">
-                                <i class="bi bi-envelope-fill display-6 mb-3 text-primary"></i>
-                                <h5 class="text-dark">E-mail</h5>
-                                <p class="small text-muted">Envie um e-mail</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!-- LinkedIn -->
-                    <div class="col-md-3 mb-4">
-                        <a href="https://linkedin.com/in/celsolenonsander" target="_blank" class="contact-link">
-                            <div class="contact-card p-4">
-                                <i class="bi bi-linkedin display-6 mb-3 text-primary"></i>
-                                <h5 class="text-dark">LinkedIn</h5>
-                                <p class="small text-muted">/in/celsolenonsander</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!-- WhatsApp -->
-                    <div class="col-md-3 mb-4">
-                        <a href="https://wa.me/5548996901919?text=Olá%20Celso,%20vim%20pelo%20seu%20portfólio!" target="_blank" class="contact-link">
-                            <div class="contact-card p-4">
-                                <i class="bi bi-whatsapp display-6 mb-3 text-primary"></i>
-                                <h5 class="text-dark">WhatsApp</h5>
-                                <p class="small text-muted">(48) 9.9690-1919</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <!-- GitHub -->
-                    <div class="col-md-3 mb-4">
-                        <a href="https://github.com/celsolenonsander/" target="_blank" class="contact-link">
-                            <div class="contact-card p-4">
-                                <i class="bi bi-github display-6 mb-3 text-primary"></i>
-                                <h5 class="text-dark">GitHub</h5>
-                                <p class="small text-muted">/celsolenonsander</p>
-                            </div>
-                        </a>
+    <!-- Seção Contato -->
+    <section id="contato" class="py-10 bg-light">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <p class="text-center mb-2">Entre em contato para oportunidades ou colaborações</p>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row text-center" id="contact-container">
+                        <!-- Contatos serão renderizados via JavaScript -->
                     </div>
                 </div>
             </div>
@@ -863,516 +312,43 @@
     </section>
 
     <!-- Rodapé -->
-    <footer class="py-4 bg-dark text-white-50 text-center">
+    <footer class="py-10 bg-dark text-white-50 text-center">
         <div class="container">
-            <p class="mb-0">
-                &copy; 2026 Celso Lenon Sander. Todos os direitos reservados.
+            <p class="mb-0" id="footer-text">
+                &copy; <span id="current-year">2026</span> <span id="footer-name">Celso Lenon Sander</span>. Todos os direitos reservados.
                 <span class="d-block d-md-inline">
                     Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> e expertise técnica
                 </span>
             </p>
             <p class="mt-2 small">
                 <i class="bi bi-code-slash me-1"></i>
-                Desenvolvedor de Software | Especialista em Sistemas Corporativos | IA Integrada
+                <span id="footer-title">Desenvolvedor de Software | Especialista em Sistemas Corporativos | IA Integrada</span>
             </p>
         </div>
     </footer>
 
-    <a href="https://wa.me/5548996901919?text=Olá%20Celso,%20vim%20pelo%20seu%20portfólio!" target="_blank" class="whatsapp-float">
+    <!-- Botão WhatsApp -->
+    <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-float">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-    </a>    
+    </a>
 
-    <!-- Bootstrap JS -->
+    <!-- Scripts -->   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JS Personalizado -->
-    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://unpkg.com/jspdf-autotable@3.5.28/dist/jspdf.plugin.autotable.js"></script>    
-<script>
+    <script src="https://unpkg.com/jspdf-autotable@3.5.28/dist/jspdf.plugin.autotable.js"></script>
+    
+    <!-- Dados e Lógica -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/pdf.js"></script>
+    
+    <!-- Scripts SEO (sem interferir visualmente) -->
+    <script src="js/keywords.js"></script>
+    <script src="js/seo-content.js"></script>
+    <script src="js/schema.js"></script>
 
-function addClickableLink(doc, text, url, x, y, color = [41, 128, 185]) {
-    // Define a cor do link (azul por padrão)
-    doc.setTextColor(...color);
-    doc.setFont("helvetica", "normal");
-    
-    // Adiciona o texto sublinhado (para parecer link)
-    const textWidth = doc.getTextWidth(text);
-    doc.text(text, x, y);
-    
-    // Adiciona linha sublinhada
-    doc.setDrawColor(...color);
-    doc.setLineWidth(0.2);
-    doc.line(x, y + 0.5, x + textWidth, y + 0.5);
-    
-    // Adiciona área clicável (metadata do link)
-    doc.link(x, y - 3, textWidth, 4, {
-        url: url
-    });
-    
-    return textWidth;
-}
-
-async function gerarCurriculoPDF() {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF("p", "mm", "a4");
-    
-    const pageWidth = 210;
-    const margin = 20;
-    let yPos = 20;
-    
-    // Configurações gerais
-    doc.setFont("helvetica");
-    doc.setFontSize(8);
-    
-    // ========== CABEÇALHO ==========
-    doc.setFillColor(41, 128, 185); // Azul
-    doc.rect(0, 0, pageWidth, 40, 'F');
-    
-    // Nome
-    doc.setTextColor(255, 255, 255);
-    doc.setFontSize(24);
-    doc.setFont("helvetica", "bold");
-    doc.text("CELSO LENON SANDER", margin, 25);
-    
-    // Título
-    doc.setFontSize(11);
-    doc.setFont("helvetica", "normal");
-    doc.text("Desenvolvedor de Software | Especialista em Sistemas Corporativos | IA Integrada", margin, 32);
-    
-// ========== INFORMAÇÕES DE CONTATO CLICÁVEIS ==========
-doc.setTextColor(100, 100, 100);
-doc.setFontSize(9);
-yPos = 45;
-const labelWidth = 25
-
-// Email (clicável)
-const emailText = "celsolsander@gmail.com";
-const emailWidth = addClickableLink(
-    doc, 
-    emailText, 
-    "mailto:celsolsander@gmail.com?subject=Contato%20Currículo&body=Olá%20Celso,%20vim%20pelo%20seu%20currículo.", 
-    margin + labelWidth, 
-    yPos
-);
-
-doc.setTextColor(100, 100, 100);
-doc.text("Email: ", margin + labelWidth - 15, yPos);
-
-// Telefone (WhatsApp link)
-yPos += 5;
-const phoneText = "(48) 9.9690-1919";
-const phoneWidth = addClickableLink(
-    doc,
-    phoneText,
-    "https://wa.me/5548996901919?text=Olá%20Celso,%20vim%20pelo%20seu%20currículo!",
-    margin + labelWidth,
-    yPos
-);
-
-doc.setTextColor(100, 100, 100);
-doc.text("Telefone: ", margin  + labelWidth - 18, yPos);
-
-// LinkedIn (clicável)
-yPos += 5;
-const linkedinText = "linkedin.com/in/celsolenonsander";
-const linkedinWidth = addClickableLink(
-    doc,
-    linkedinText,
-    "https://linkedin.com/in/celsolenonsander",
-    margin + labelWidth,
-    yPos
-);
-
-doc.setTextColor(100, 100, 100);
-doc.text("LinkedIn: ", margin + labelWidth - 20, yPos);
-
-// GitHub (clicável)
-yPos += 5;
-const githubText = "github.com/celsolenonsander";
-const githubWidth = addClickableLink(
-    doc,
-    githubText,
-    "https://github.com/celsolenonsander/",
-    margin + labelWidth,
-    yPos
-);
-
-doc.setTextColor(100, 100, 100);
-doc.text("GitHub: ", margin + labelWidth - 17, yPos);
-    yPos += 10;
-    
-    // ========== PERFIL PROFISSIONAL ==========
-    addSectionTitle(doc, "PERFIL PROFISSIONAL", margin, yPos);
-    yPos += 6;
-    
-    doc.setTextColor(60, 60, 60);
-    doc.setFontSize(9);
-    doc.setFont("helvetica", "normal");
-    
-    const profileText = "Desenvolvedor de Software com sólida experiência (Desde 2013) no desenvolvimento de sistemas, atuando em projetos fiscais, contábeis, folha de pagamento, ERP, PDV e sistemas telefônicos (Integrações com hardware) e muitos outros. Forte foco em aplicações Desktop, arquitetura de software, qualidade de código, segurança e integração de Inteligência Artificial, com atuação desde a análise de negócio até a entrega e sustentação das soluções.";
-    yPos = addWrappedText(doc, profileText, margin, yPos, pageWidth - 2*margin, 5);
-    yPos += 4;
-    
-    // ========== EXPERIÊNCIA PROFISSIONAL ==========
-    addSectionTitle(doc, "EXPERIÊNCIA PROFISSIONAL", margin, yPos);
-    yPos += 6;
-    
-    // Experiência 1 - Extradigital Tecnologia
-    yPos = addExperienceItem(doc, 
-        "2025 - Atual", 
-        "Extradigital Tecnologia", 
-        "Programador Sênior",
-        "Desenvolvimento e manutenção de sistemas especializados para cartórios, com foco em segurança jurídica, fluxos de trabalho específicos do setor e conformidade com normativas legais.",
-        ["Delphi", "SQL Server", "Sistemas Especializados"],
-        margin, yPos, pageWidth
-    );
-    
-    // Experiência 2 - SuperSoft Sistemas
-    yPos = addExperienceItem(doc, 
-        "2020 - 2024", 
-        "SuperSoft Sistemas Ltda.", 
-        "Programador Sênior N4",
-        "Desenvolvimento e sustentação de módulos críticos de um ERP, com atuação nas áreas fiscal, contábil e folha de pagamento. Responsável por implementações, correções e otimizações de performance.",
-        ["Delphi XE10.2", "Firebird", "ERP", "Módulos Fiscais"],
-        margin, yPos, pageWidth
-    );
-    
-    // Experiência 3 - Mamut Tecnologia
-    yPos = addExperienceItem(doc, 
-        "2012 - 2020", 
-        "Mamut Tecnologia Ltda.", 
-        "Programador",
-        "Desenvolvimento de sistemas de automação comercial, com foco em integração de hardware periférico (PABX, balanças e leitores), utilizando comunicação serial, TCP e UDP. Atuação em todo o ciclo de desenvolvimento do produto.",
-        ["Delphi XE10.3", "Firebird", "Integração de Hardware", "TCP/UDP/Serial"],
-        margin, yPos, pageWidth
-    );
-    
-    // Experiência 4 - Líder Peças Rodoviárias
-    yPos = addExperienceItem(doc, 
-        "2010 - 2012", 
-        "Líder Peças Rodoviárias", 
-        "Desenhista Mecânico / Programador CNC",
-        "Programação e preparação de torno CNC, desenvolvimento de desenhos técnicos e projetos de novos produtos em AutoCAD, atuando como elo entre engenharia e manufatura.",
-        ["AutoCAD", "Programação CNC", "Desenvolvimento de Produto"],
-        margin, yPos, pageWidth
-    );
-    
-    // Projetos Independentes
-    yPos = addExperienceItem(doc, 
-        "2018 - Atual", 
-        "Projetos Independentes", 
-        "Consultor em Desenvolvimento de Sistemas",
-        "Atuação em projetos independentes e consultorias pontuais, envolvendo desenvolvimento de aplicações web, APIs REST, automações e manutenção de sistemas legados. Responsável por todo o ciclo de entrega, desde o levantamento de requisitos até a implementação e publicação, com foco em performance, escalabilidade e integração entre sistemas.",
-        ["Node.js", "NestJS", "React", "APIs REST", "SQL/NoSQL", "Integrações"],
-        margin, yPos, pageWidth
-    );
-    
-    yPos += 10;
-    
-    // Verificar se precisa de nova página
-    if (yPos > 250) {
-        doc.addPage();
-        yPos = 20;
-    }
-    
-    // ========== STACK TECNOLÓGICO ==========
-    addSectionTitle(doc, "STACK TECNOLÓGICO", margin, yPos);
-    yPos += 8;
-    
-    // Linguagens e Frameworks
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(9);
-    doc.setTextColor(41, 128, 185);
-    doc.text("Linguagens, Frameworks e Plataformas:", margin, yPos);
-    yPos += 5;
-    
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(60, 60, 60);
-    const langs = ["Delphi", "Python", "NestJS", "ReactJS", "TypeScript", "APIs REST", "MVC", "Aplicações Desktop", "Serviços"];
-    yPos = addTechTags(doc, langs, margin, yPos, pageWidth);
-    yPos += 4;
-    
-    // Bancos de Dados
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor(41, 128, 185);
-    doc.text("Bancos de Dados:", margin, yPos);
-    yPos += 4;
-    
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(60, 60, 60);
-    const dbs = ["Firebird", "SQL Server", "PostgreSQL", "SQL", "ORMs"];
-    yPos = addTechTags(doc, dbs, margin, yPos, pageWidth);
-    yPos += 4;
-    
-    // Arquitetura
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor(41, 128, 185);
-    doc.text("Arquitetura & Padrões de Projeto:", margin, yPos);
-    yPos += 4;
-    
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(60, 60, 60);
-    const arch = ["Arquitetura em Camadas", "MVC", "Clean Code", "Factory Pattern", "Abstract Factory", "Singleton", "SOLID", "Escalabilidade"];
-    yPos = addTechTags(doc, arch, margin, yPos, pageWidth);
-    yPos += 4;
-    
-    // Backend e Segurança
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor(41, 128, 185);
-    doc.text("Backend, Segurança & Integrações:", margin, yPos);
-    yPos += 5;
-    
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(60, 60, 60);
-    const backend = ["APIs REST", "OAuth 2.0", "JWT", "Autenticação", "Autorização", "Integração", "ORMs"];
-    yPos = addTechTags(doc, backend, margin, yPos, pageWidth);
-    yPos += 4;
-    
-    // Verificar se precisa de nova página
-    if (yPos > 250) {
-        doc.addPage();
-        yPos = 20;
-    }
-    
-    // Qualidade e DevOps
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor(41, 128, 185);
-    doc.text("Qualidade, Performance & DevOps:", margin, yPos);
-    yPos += 5;
-    
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(60, 60, 60);
-    const devops = ["Testes Unitários", "CI/CD", "Automação", "Cache Distribuído", "Performance", "Estabilidade", "Qualidade"];
-    yPos = addTechTags(doc, devops, margin, yPos, pageWidth);
-    yPos += 8;
-    
-    // ========== DOMÍNIOS DE NEGÓCIO ==========
-    addSectionTitle(doc, "DOMÍNIOS DE NEGÓCIO", margin, yPos);
-    yPos += 6;
-    
-    const domains = [
-        "Sistemas Fiscais - Desenvolvimento de soluções para gestão fiscal e tributária",
-        "Sistemas Contábeis - Soluções para contabilidade e gestão financeira",
-        "Folha de Pagamento - Sistemas de gestão de RH e folha de pagamento",
-        "ERP - Sistemas de gestão empresarial integrada",
-        "PDV - Sistemas de ponto de venda e automação comercial",
-        "Sistemas Telefônicos - Integração com hardware e sistemas de telefonia"
-    ];
-    
-    doc.setFontSize(9);
-    doc.setTextColor(60, 60, 60);
-    
-    domains.forEach(domain => {
-        doc.text("• " + domain, margin, yPos);
-        yPos += 5;
-    });
-    
-    yPos += 6;
-    
-    // Verificar se precisa de nova página
-    if (yPos > 250) {
-        doc.addPage();
-        yPos = 20;
-    }
-    /*
-        // ========== INTELIGÊNCIA ARTIFICIAL ==========
-        addSectionTitle(doc, "INTELIGÊNCIA ARTIFICIAL & DATA", margin, yPos);
-        yPos += 8;
-
-        const iaText = "Especialização em integração de IA à arquitetura de sistemas, desenvolvimento de soluções em Python com uso de PyTorch e TensorFlow. Aplicação de IA para automação de processos, análise e classificação de dados, apoio à tomada de decisão e evolução de sistemas legados.";
-
-        // MUDANÇAS AQUI: Cor mais escura (cinza escuro) e fonte menor
-        doc.setFontSize(8);  // Diminuído de 9 para 8
-        doc.setTextColor(40, 40, 40);  // Cinza escuro em vez de azul (60,60,60)
-        doc.setFont("helvetica", "normal");
-        yPos = addWrappedText(doc, iaText, margin, yPos, pageWidth - 2*margin, 4.5);
-        yPos += 8;
-
-        // Habilidades em IA - também com cor mais escura
-        const iaSkills = [
-            "Machine Learning - Modelos preditivos e classificação",
-            "Análise de Dados - Processamento e insights",
-            "Automação - Processos inteligentes",
-            "Integração - IA em sistemas existentes"
-        ];
-
-        // Aplicar a mesma cor e tamanho para os itens da lista
-        doc.setFontSize(8);  // Tamanho menor
-        doc.setTextColor(40, 40, 40);  // Cinza escuro
-
-        iaSkills.forEach(skill => {
-            doc.text("• " + skill, margin, yPos);
-            yPos += 4.5;  // Espaçamento um pouco menor também
-        });
-    
-    yPos += 4;
-    */
-
-    // ========== PROJETOS DESTACADOS ==========
-    addSectionTitle(doc, "PROJETOS DESTACADOS", margin, yPos);
-    yPos += 4;
-    
-    const projects = [
-        {
-            name: "Sistema Fiscal Integrado",
-            desc: "Sistema completo de gestão fiscal com geração de NF-e, CT-e, MDF-e e SPED. Integração direta com SEFAZ e certificação digital. Redução de 70% no tempo de processamento.",
-            techs: ["Delphi", "Firebird", "WebServices", "XML"]
-        },
-        {
-            name: "Sistema de Telefonia Corporativa",
-            desc: "Sistema integrado de PABX digital com gravação de chamadas, relatórios analíticos e integração com CRM. Suporte a 500+ linhas simultâneas.",
-            techs: ["Delphi", "TCP/IP", "Áudio Digital", "SQL Server"]
-        },
-        {
-            name: "Automação com IA",
-            desc: "Sistema de classificação automática de documentos fiscais utilizando machine learning para redução de erros manuais. 95% de precisão na classificação.",
-            techs: ["Python", "TensorFlow", "API REST", "PostgreSQL"]
-        }
-    ];
-    
-    projects.forEach(project => {
-        // Verificar se precisa de nova página
-        if (yPos > 250) {
-            doc.addPage();
-            yPos = 20;
-        }
-        
-        doc.setFont("helvetica", "bold");
-        doc.setFontSize(9);
-        doc.setTextColor(41, 128, 185);
-        doc.text(project.name, margin, yPos);
-        yPos += 5;
-        
-        doc.setFont("helvetica", "normal");
-        doc.setFontSize(8);
-        doc.setTextColor(60, 60, 60);
-        yPos = addWrappedText(doc, project.desc, margin, yPos, pageWidth - 2*margin, 4);
-        yPos += 3;
-        
-        doc.setFontSize(7);
-        let xPos = margin;
-        project.techs.forEach(tech => {
-            const techWidth = doc.getTextWidth(tech + "  ");
-            if (xPos + techWidth > pageWidth - margin) {
-                xPos = margin;
-                yPos += 4;
-            }
-            doc.setTextColor(255, 255, 255);
-            doc.setFillColor(41, 128, 185);
-            doc.roundedRect(xPos, yPos - 3, techWidth, 4, 1, 1, 'F');
-            doc.text(tech, xPos + 1, yPos);
-            xPos += techWidth + 3;
-        });
-        yPos += 4;
-    });
-    
-    // ========== RODAPÉ ==========
-    doc.setPage(doc.internal.getNumberOfPages());
-    doc.setTextColor(150, 150, 150);
-    doc.setFontSize(7);
-    doc.text(`Currículo gerado em ${new Date().toLocaleDateString('pt-BR')} | Celso Lenon Sander`, pageWidth/2, 290, { align: 'center' });
-    
-    // Salvar PDF
-    doc.save("Celso_Lenon_Sander_Curriculo.pdf");
-}
-
-// ========== FUNÇÕES AUXILIARES ==========
-
-function addSectionTitle(doc, title, x, y) {
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(12);
-    doc.setTextColor(41, 128, 185);
-    doc.text(title, x, y);
-    
-    // Linha decorativa
-    doc.setDrawColor(41, 128, 185);
-    doc.setLineWidth(0.5);
-    doc.line(x, y + 1, x + 50, y + 1);
-}
-
-function addWrappedText(doc, text, x, y, maxWidth, lineHeight) {
-    const lines = doc.splitTextToSize(text, maxWidth);
-    doc.text(lines, x, y);
-    return y + (lines.length * lineHeight);
-}
-
-function addExperienceItem(doc, period, company, position, description, tags, margin, yPos, pageWidth) {
-    // Verificar se precisa de nova página
-    if (yPos > 250) {
-        doc.addPage();
-        yPos = 20;
-    }
-    
-    // Período
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(9);
-    doc.setTextColor(41, 128, 185);
-    doc.text(period, margin, yPos);
-    
-    // Empresa e Cargo
-    doc.text(company, margin + 25, yPos);
-    yPos += 4;
-    
-    doc.setFont("helvetica", "italic");
-    doc.setFontSize(8);
-    doc.setTextColor(100, 100, 100);
-    doc.text(position, margin + 25, yPos);
-    yPos += 6;
-    
-    // Descrição
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(8);
-    doc.setTextColor(60, 60, 60);
-    yPos = addWrappedText(doc, description, margin + 5, yPos, pageWidth - margin - 25, 4);
-    yPos += 4;
-    
-    // Tags
-    doc.setFontSize(7);
-    let xPos = margin + 5;
-    tags.forEach(tag => {
-        const tagWidth = doc.getTextWidth(tag + "  ");
-        if (xPos + tagWidth > pageWidth - margin) {
-            xPos = margin + 5;
-            yPos += 4;
-        }
-        doc.setTextColor(255, 255, 255);
-        doc.setFillColor(52, 152, 219);
-        doc.roundedRect(xPos, yPos - 3, tagWidth, 4, 1, 1, 'F');
-        doc.text(tag, xPos + 1, yPos);
-        xPos += tagWidth + 3;
-    });
-    
-    return yPos + 8;
-}
-
-function addTechTags(doc, tags, margin, yPos, pageWidth) {
-    let currentX = margin;
-    let currentY = yPos;
-    const tagHeight = 5;
-    const tagPadding = 3;
-    
-    tags.forEach(tag => {
-        const tagWidth = doc.getTextWidth(tag) + tagPadding * 2;
-        
-        // Quebra de linha se não couber
-        if (currentX + tagWidth > pageWidth - margin) {
-            currentX = margin;
-            currentY += tagHeight + 3;
-        }
-        
-        // Desenhar tag
-        doc.setFillColor(230, 230, 230);
-        doc.roundedRect(currentX, currentY - 3.5, tagWidth, tagHeight, 2, 2, 'F');
-        
-        // Texto da tag
-        doc.setTextColor(60, 60, 60);
-        doc.text(tag, currentX + tagPadding, currentY);
-        
-        currentX += tagWidth + 3;
-    });
-    
-    return currentY + tagHeight + 3;
-}
-</script>
-    </body>
+    <!-- CSS adicional -->
+    <link rel="stylesheet" href="css/seo.css">
+</body>
 </html>
